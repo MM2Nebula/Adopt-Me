@@ -1,0 +1,21 @@
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/random%202"))()
+
+local One = library:Window("TRADE SCAM")
+
+local targetPlayerName = ""
+local robuxAmount = 0
+local displayedRobuxAmount = nil
+
+One:Box("User =", "Type Here!", function(inputText)
+    targetPlayerName = inputText
+    robuxAmount = 0
+    displayedRobuxAmount = nil
+end)
+
+One:Toggle("Freeze Trade", function(state)
+    -- Handle freeze trade logic here
+end)
+
+One:Toggle("Auto Accept", function(state)
+    -- Handle auto accept logic here
+end)
